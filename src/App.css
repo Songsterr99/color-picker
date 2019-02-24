@@ -1,0 +1,49 @@
+.App {
+  display: flex;
+}
+
+.App_left {
+  min-width:50%;
+  min-height:100vh;
+}
+
+.App_right {
+  min-width: 50%;
+  min-height: 100vh;
+}
+
+.color-picker {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+
+.color-forms {
+  width: 280px;
+  background-color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 70px 0 70px 0;
+  border-radius: 5px;
+  display: block;
+  margin-top: 200px;
+}
+
+.fields {
+  display: block;
+  margin:0 0 15px 5px;
+}
+
+.fields input{
+  width: 35px;
+  border-radius: 0;
+  outline: 0;
+  border-width: 0 0 2px;
+  margin: 0 7px 0 7px;
+}
+
+.fields label {
+  margin-right: 5px;
+}
