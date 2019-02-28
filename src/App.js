@@ -22,18 +22,21 @@ class App extends React.Component {
 
   handleChange = (color, event) => {
     const k = Math.min(1 -  color.rgb.r/255, 1 - color.rgb.g/255, 1 - color.rgb.b/255);
+    console.log( (1 -  color.rgb.r / 255 - k) / (1 - k))
+    console.log( (1 -  color.rgb.r / 255 - k))
+
     this.setState({
       color: color.hex,
       r: color.rgb.r,
       g: color.rgb.g,
       b: color.rgb.b,
       k: k,
-      c: (1 -  color.rgb.r/255 - k) / (1 - k),
-      m: (1 -  color.rgb.g/255 - k) / (1 - k),
-      y: (1 -  color.rgb.b/255 - k) / (1 - k),
-      x: this.convertRGBToX(color.rgb.r, color.rgb.g, color.rgb. b),
-      xy: this.convertRGBToY(color.rgb.r, color.rgb.g, color.rgb. b),
-      z: this.convertRGBToZ(color.rgb.r, color.rgb.g, color.rgb. b),
+      c: (1 -  color.rgb.r / 255 - k) / (1 - k),
+      m: (1 -  color.rgb.g / 255 - k) / (1 - k),
+      y: (1 -  color.rgb.b / 255 - k) / (1 - k),
+      x: this.convertRGBToX(color.rgb.r, color.rgb.g, color.rgb.b),
+      xy: this.convertRGBToY(color.rgb.r, color.rgb.g, color.rgb.b),
+      z: this.convertRGBToZ(color.rgb.r, color.rgb.g, color.rgb.b),
     });
   }
 
